@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Larken;
+    src: url(Larken-Medium.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: Larken, sans-serif;
+    padding-top: 12px;
+    background-color: #fcfaf4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+input::placeholder {
+    font-family: Larken;
+}
+
+button {
+    font-family: Larken;
+}
+
+/* To-Do List styling */
+.todo-section {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todo-list {
+    padding: 20px;
+    background: #c3b2e7;
+    border-radius: 8px;
+    height: 375px;
+    overflow-y: auto;
+}
+
+.todo-list h2 {
+    font-family: 'Larken';
+    color: #52225e;
+}
+
+.todo-input input {
+    border: 0;
+    background: #c3b2e7;
+}
+
+.todo-input input:focus {
+    outline: none;
+}
+
+.todo-input placeholder{
+    font-family: Larken;
+}
+#tasks {
+    list-style: none;
+    padding: 0;
+}
+
+#tasks li {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #c3b2e7;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#tasks li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #808080;
+}
+
+/* Timetable styling */
+.timetable {
+    flex-grow: 2;
+    padding: 20px;
+    background: #f682a5;
+    border-radius: 8px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timetable h2 {
+    font-family: 'Larken';
+    color: #52225e;
+}
+
+.timetable-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.timetable-input input {
+    flex: 1;
+    border: 0;
+    padding: 8px;
+    background-color: #f682a5;
+}
+
+.timetable-input input:focus {
+    outline: none;
+    border-bottom: 1px solid black  ;
+}
+
+
+.time-slot {
+    padding: 10px;
+    background-color: #303030;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Spotify styling */
+.spotify {
+    width: 300px;
+    background-color: #fcfaf4;
+    border-radius: 8px;
+}
+
+/* Bottom section for Pomodoro Timer and Quotes */
+.bottom-section {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.pomodoro {
+    flex: 1;
+    padding: 20px;
+    background: #c5d68c;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ffffff;
+    height: 300px;
+    width: 430px;
+}
+
+.pomodoro h2 {
+    font-family: 'Larken';
+    color: #1b461e;
+    width: 100%;
+}
+
+.pomodoro-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.pomodoro-buttons button {
+    flex: 1;
+    text-align: center;
+}
+
+.quotes {
+    display: grid;
+    background: #fedf6f;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 20px;
+    width: 710px;
+}
+
+.quotes h2 {
+    font-family: 'Larken';
+    color: #4a411e;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Larken';
+    color: #1b461e;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cd4945;
+}
+
+#footer {
+    background-color: #5848e7;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    opacity: 70%;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#footer a {
+    color: white;
+}

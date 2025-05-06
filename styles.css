@@ -239,3 +239,119 @@ button:hover {
 #footer a {
     color: white;
 }
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo-section,
+    .timetable,
+    .spotify {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .pomodoro,
+    .quotes {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .todo-input,
+    .timetable-input {
+        flex-direction: column;
+    }
+
+    .todo-input input,
+    .timetable-input input {
+        width: 100%;
+    }
+
+    .todo-input button,
+    .timetable-input button {
+        width: 100%;
+    }
+
+    .pomodoro-buttons {
+        flex-direction: column;
+    }
+
+    .pomodoro-buttons button {
+        width: 100%;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    #timer {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo-section,
+    .timetable,
+    .spotify,
+    .pomodoro,
+    .quotes {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .todo-input,
+    .timetable-input,
+    .pomodoro-buttons {
+        flex-direction: column;
+    }
+
+    .todo-input input,
+    .timetable-input input,
+    .todo-input button,
+    .timetable-input button,
+    .pomodoro-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        height: 300px;
+        width: 100%;
+    }
+
+    #timer {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
